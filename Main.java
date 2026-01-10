@@ -6,18 +6,20 @@ public class Main{
     System.out.print("Enter a String of your choice : ");
     String str = sc.nextLine();
 
-    StringBuffer sb = new StringBuffer(str);
+    char[] arr1 = str.toCharArray();
 
-    for(int i=0 ; i<sb.length()/2; i++){
+    for(int i=0 ; i<arr1.length/2; i++){
 
-        int j = sb.length()-1-i;
+        int j = arr1.length-1-i;
 
-        char temp = sb.charAt(i);
-        sb.setCharAt(i, sb.charAt(j));
-        sb.setCharAt(j, temp);
+        char temp = arr1[i];
+        arr1[i] = arr1[j];
+        arr1[j] = temp;
     }
 
-        System.out.println(sb);
+        for(char ch : arr1){
+            System.out.print(ch);
+        }
 
     }
 
