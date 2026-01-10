@@ -4,6 +4,7 @@ public class Main{
     System.out.println("Welcome to the world of programming!");
     System.out.println("Another One!");
     System.out.println("Hello");
+    System.out.println(123);
     }
 
 }
